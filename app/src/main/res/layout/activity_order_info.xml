@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.GeneralTitleBarView
+        android:id="@+id/gtbv_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></net.anchong.app.view.GeneralTitleBarView>
+
+    <include layout="@layout/layout_order_tag" />
+
+    <FrameLayout
+        android:id="@+id/fl_order"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:transitionName="net.anchong.app.fragment.AllOrderInfoFragment">
+
+    </FrameLayout>
+</LinearLayout>

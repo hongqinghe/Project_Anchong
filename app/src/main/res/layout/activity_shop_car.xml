@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.GeneralTitleBarView
+        android:id="@+id/gtvv_shopcar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.GeneralTitleBarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/bottom"
+            android:layout_below="@+id/titlebar_layout"
+            android:layout_weight="1">
+
+            <net.anchong.app.third.xlistview.XListView
+                android:id="@+id/listview_shop_car"
+                style="@style/xlistview"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include
+            layout="@layout/shoppingcar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.WhiteGeneralTitleBarView
+        android:id="@+id/wgtbv_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_bg">
+
+    </net.anchong.app.view.WhiteGeneralTitleBarView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/theme_bg"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_business_project_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/tab_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_business_project1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_business_project_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="工程招标"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line_project1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/theme"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_business_project2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_business_project_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="承接工程"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line_project2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/theme"
+                android:visibility="invisible"></View>
+        </LinearLayout>
+    </LinearLayout>
+
+    <net.anchong.app.third.xlistview.XListView
+        android:id="@+id/xlv_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </net.anchong.app.third.xlistview.XListView>
+</LinearLayout>

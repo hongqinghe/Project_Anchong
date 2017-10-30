@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flowlayout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_view_goodsparam_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="颜色" />
+
+    <com.liangfeizc.flowlayout.FlowLayout
+        android:id="@+id/flow_layout_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        flowlayout:horizontal_spacing="10dp"
+        flowlayout:vertical_spacing="10dp" />
+
+</LinearLayout>

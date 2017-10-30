@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_hot_business_pic1"
+            android:layout_width="375dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            fresco:actualImageScaleType="fitXY"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:viewAspectRatio="1" />
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/sdv_goods_four_pic1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_weight="1"-->
+        <!--fresco:actualImageScaleType="fitXY"-->
+        <!--fresco:placeholderImage="@drawable/icon_placeholder"-->
+        <!--fresco:placeholderImageScaleType="fitXY"-->
+        <!--fresco:viewAspectRatio="1" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

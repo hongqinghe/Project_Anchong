@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/public_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="3dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="3dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_goodslist_icon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        fresco:failureImage="@drawable/icon_failure"
+        fresco:placeholderImage="@drawable/icon_placeholder"
+        fresco:placeholderImageScaleType="fitXY"
+        fresco:progressBarAutoRotateInterval="5000"
+        fresco:progressBarImage="@drawable/icon_progress_bar"
+        fresco:progressBarImageScaleType="fitCenter"
+        fresco:roundingBorderWidth="2dp"
+        fresco:viewAspectRatio="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goodslist_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="商品名称" />
+
+        <TextView
+            android:id="@+id/tv_goodslist_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="价格￥2222" />
+
+        <TextView
+            android:id="@+id/tv_goodslist_vipprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="批量采购价￥1111" />
+    </LinearLayout>
+</LinearLayout>

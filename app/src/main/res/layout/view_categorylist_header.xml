@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.RotationImageView
+        android:id="@+id/riv_index_listview_header_rotation"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="8dp">
+
+    </net.anchong.app.view.RotationImageView>
+
+    <include layout="@layout/view_categorylist_header_middle" />
+
+    <net.anchong.app.view.GoodsOneView
+        android:id="@+id/view_goods_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    </net.anchong.app.view.GoodsOneView>
+
+    <net.anchong.app.view.GoodsTwoView
+        android:id="@+id/view_goods_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    </net.anchong.app.view.GoodsTwoView>
+
+    <net.anchong.app.view.GoodsThreeView
+        android:id="@+id/view_goods_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    </net.anchong.app.view.GoodsThreeView>
+
+    <net.anchong.app.view.GoodsFourView
+        android:id="@+id/view_goods_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    </net.anchong.app.view.GoodsFourView>
+
+    <net.anchong.app.view.GoodsFiveView
+        android:id="@+id/view_goods_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    </net.anchong.app.view.GoodsFiveView>
+
+    <net.anchong.app.view.GoodsSixView
+        android:id="@+id/view_goods_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    </net.anchong.app.view.GoodsSixView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/tab_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextStyleGoodsAdvertTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="为你推荐" />
+
+    </RelativeLayout>
+</LinearLayout>

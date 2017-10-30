@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_goods_info_recomment_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/tab_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_goods_info_recomment1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_info_recomment_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="推荐商品"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line_goods_info_recomment1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/theme"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_goods_info_recomment2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_info_recomment_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="配套商品"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line_goods_info_recomment2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/theme"
+                android:visibility="invisible"></View>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fl_order"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:transitionName="net.anchong.app.fragment.AllOrderInfoFragment">-->
+    <!--</FrameLayout>-->
+
+    <net.anchong.app.view.GoodsRotationView
+        android:id="@+id/grv_goods_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </net.anchong.app.view.GoodsRotationView>
+</LinearLayout>

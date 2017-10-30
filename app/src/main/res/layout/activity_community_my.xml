@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.MyCommunityHeadView
+        android:id="@+id/title_my_community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.MyCommunityHeadView>
+
+    <net.anchong.app.third.xlistview.XListView
+        android:id="@+id/xlv_community_my"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </net.anchong.app.third.xlistview.XListView>
+
+</LinearLayout>

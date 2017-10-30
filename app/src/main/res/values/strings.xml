@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">安虫商城</string>
+
+
+    <!-- 通用 -->
+    <string name="back">返回</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="smoothlistview_header_hint_normal">下拉刷新</string>
+    <string name="smoothlistview_header_hint_ready">松开刷新数据</string>
+    <string name="smoothlistview_header_hint_loading">正在加载...</string>
+    <string name="smoothlistview_header_last_time">上次更新时间：</string>
+    <string name="smoothlistview_footer_hint_normal">查看更多</string>
+    <string name="smoothlistview_footer_hint_ready">松开载入更多</string>
+    <string name="titleBar_name">商城</string>
+    <string name="request_error_msg">网络错误，请重试！</string>
+    <string name="request_goodlist_empty_msg">暂无商品！</string>
+    <string name="register_success_msg">注册成功！</string>
+
+    <!-- 首页商机 -->
+    <string name="business_navi_project">工程</string>
+    <string name="business_navi_rencai">人才</string>
+    <string name="business_navi_product">找货</string>
+    <string name="business_text_hot_project">热门招标项目</string>
+    <string name="business_text_new_project">最新招标项目</string>
+    <string name="business_text_hot_project_text">热门工程</string>
+
+    <!-- 商城首页 -->
+    <string name="goods_one_mokuai_text">最新上架</string>
+    <string name="goods_two_mokuai_text">金牌店铺</string>
+    <string name="goods_three_mokuai_text">热卖单品</string>
+    <string name="goods_four_mokuai_text">最新上架</string>
+    <string name="goods_five_mokuai_text">强力推荐</string>
+    <string name="goods_six_mokuai_text">热卖单品</string>
+
+    <!-- 订单支付 -->
+    <string name="order_pay_info_request_error">获取支付信息失败</string>
+
+    <!-- 首页下方选项卡 -->
+    <string name="str_index_tabmenu_shop">商城</string>
+    <string name="str_index_tabmenu_shequ">社区</string>
+    <string name="str_index_tabmenu_business">商机</string>
+    <string name="str_index_tabmenu_mine">我的</string>
+
+    <!-- 我的界面 -->
+    <string name="str_mine_tab_publish">发布</string>
+    <string name="str_mine_tab_identification">商家认证</string>
+    <string name="str_mine_tab_shops">商铺申请</string>
+    <string name="str_mine_tab_orderform">订单</string>
+    <string name="str_mine_tab_money">钱袋</string>
+    <string name="str_mine_tab_car">购物车</string>
+    <string name="str_mine_tab_help">联系我们</string>
+    <string name="str_mine_tab_fans">粉丝</string>
+
+    <!-- 个人商机查看页面选项卡 -->
+    <string name="str_business_tabmenu_one">发包工程</string>
+    <string name="str_business_tabmenu_two">承接工程</string>
+    <string name="str_business_tabmenu_three">发布人才</string>
+    <string name="str_business_tabmenu_fout">人才自荐</string>
+
+    <string name="str_activity_certification_name">认证名称:</string>
+    <string name="str_activity_qualification_name">资质</string>
+
+    <string name="str_view_certification_name">资质名称:</string>
+    <string name="str_view_certification_info">说明:</string>
+    <string name="str_view_certification_icon">上传证件:</string>
+    <string name="forget_password">请输入手机号码</string>
+    <string name="btn_forget_password">验证</string>
+    <string name="reset_captcha">请输入验证码</string>
+    <string name="reset_password">新密码:6~16个大小写英文字母、符号或数字</string>
+    <string name="reset_password2">确认密码：请再次输入密码</string>
+    <string name="btn_reset_ok">确定</string>
+
+
+    <!--     **************************************************** 商品订单部分     **************************************************** -->
+    <string name="sotck_max">当前商品仅剩%1$s件</string>
+
+
+    <!-- 点击查看大图的下标 -->
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <!-- 购物车 -->
+    <string name="surplus_stock">仅剩%1$s件</string>
+    <string name="settlement">去结算</string>
+    <string name="goods_price">&#165;0.0</string>
+    <string name="total_count">共0件</string>
+    <string name="all_select">全选</string>
+    <string name="add_address">新增地址</string>
+
+    <!-- 订单 -->
+    <string name="str_commitorder">提交订单</string>
+    <string name="str_myorder">我的订单</string>
+    <string name="str_seaallorder">查看全部订单</string>
+    <string name="str_obligations_order">待付款</string>
+    <string name="str_wait_send_order">待发货</string>
+    <string name="str_wait_receive_order">待收货</string>
+    <string name="str_sale_after">售后</string>
+    <string name="msg_obligations_order">等待买家付款</string>
+    <string name="msg_send_order">买家已付款</string>
+    <string name="msg_receive_order">卖家已发货</string>
+    <string name="msg_check_order">待审核</string>
+    <string name="msg_refund_order">已退款</string>
+    <string name="msg_close_order">交易关闭</string>
+    <string name="msg_ok_order">交易成功</string>
+    <string name="msg_cancle_order">取消订单</string>
+    <string name="msg_order_look">查看物流</string>
+    <string name="msg_order_receive_ok">确认收货</string>
+    <string name="msg_order_pay">付款</string>
+
+    <!-- 商品详情界面 -->
+    <string name="str_moreinfo_tabmenu_detailpic">商品详情</string>
+    <string name="str_moreinfo_tabmenu_parameterpic">规格参数</string>
+    <string name="str_moreinfo_tabmenu_datapic">相关资料</string>
+
+    <!-- 商品分类界面 -->
+    <string name="str_categorylist_intelligent_gate">智能门禁</string>
+    <string name="str_categorylist_alert">探测警报</string>
+    <string name="str_categorylist_building_talkback">楼宇对讲</string>
+    <string name="str_categorylist_dining_system">智能消费</string>
+    <string name="str_categorylist_parking_management">停车管理</string>
+    <string name="str_categorylist_polling">寻更巡检</string>
+    <string name="str_categorylist_security">安防配套</string>
+    <string name="str_categorylist_video_surveillance">视频监控</string>
+    <string name="context_menu">筛选</string>
+
+    <!-- 图片裁剪 -->
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="permission_pick_rationale">READ_EXTERNAL_STORAGE permission is needed to pick image.</string>
+    <string name="permission_crop_rationale">WRITE_EXTERNAL_STORAGE permission is needed to save cropped image.</string>
+    <string name="permission_denied">Permission was denied. Please consider granting it in order to use all features.</string>
+    <string name="permission_denied_never_ask_again">Permission was denied with never ask again.</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<net.anchong.app.view.TitleBarView-->
+        <!--android:id="@+id/tbv_shequ"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <net.anchong.app.view.TalkTitleBarView
+        android:id="@+id/tbv_shequ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.TalkTitleBarView>
+
+    <net.anchong.app.third.xlistview.XListView
+        android:id="@+id/xlv_shequ"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp">
+
+    </net.anchong.app.third.xlistview.XListView>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="这里是社区"-->
+            <!--android:textSize="40sp" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

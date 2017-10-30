@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="order_edit_width">0.5dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="shoppingcar_img_width">90dp</dimen>
+    <dimen name="shoppingcar_status_width">80dp</dimen>
+    <dimen name="goods_size">12sp</dimen>
+    <dimen name="tool_bar_height">56dp</dimen>
+</resources>

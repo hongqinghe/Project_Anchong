@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+
+    <net.anchong.app.view.RotationImageView
+        android:id="@+id/riv_business_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.RotationImageView>
+
+    <net.anchong.app.view.BusinessNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_bg">
+
+    </net.anchong.app.view.BusinessNavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/business_info_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="本项目采用资质后审，不接受现场报名....." />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_277" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/bussiness_more" />
+    </LinearLayout>
+
+
+
+    <net.anchong.app.view.HotProjectView
+        android:id="@+id/hpv_business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.HotProjectView>
+
+    <net.anchong.app.view.NewProjectView
+        android:id="@+id/npv_business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.NewProjectView>
+</LinearLayout>

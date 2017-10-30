@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/str_view_certification_name" />
+
+        <com.cengalabs.flatui.views.FlatEditText
+            android:id="@+id/et_view_certification_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            flatui:fl_borderWidth="1dp"
+            flatui:fl_cornerRadius="5dp"
+            flatui:fl_fieldStyle="fl_box"
+            flatui:fl_size="20dp"
+            flatui:fl_theme="@array/snow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/str_view_certification_info" />
+
+        <com.cengalabs.flatui.views.FlatEditText
+            android:id="@+id/et_view_certification_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            flatui:fl_borderWidth="1dp"
+            flatui:fl_cornerRadius="5dp"
+            flatui:fl_fieldStyle="fl_box"
+            flatui:fl_size="20dp"
+            flatui:fl_theme="@array/snow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/str_view_certification_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_view_certification"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+    </LinearLayout>
+</LinearLayout>

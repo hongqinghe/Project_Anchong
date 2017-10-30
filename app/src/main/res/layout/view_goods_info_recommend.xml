@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_recommend_one"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <net.anchong.app.view.MallProductView
+            android:id="@+id/mpv_recommend_one_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </net.anchong.app.view.MallProductView>
+
+        <net.anchong.app.view.MallProductView
+            android:id="@+id/mpv_recommend_one_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </net.anchong.app.view.MallProductView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_recommend_two"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <net.anchong.app.view.MallProductView
+            android:id="@+id/mpv_recommend_two_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </net.anchong.app.view.MallProductView>
+
+        <net.anchong.app.view.MallProductView
+            android:id="@+id/mpv_recommend_two_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </net.anchong.app.view.MallProductView>
+    </LinearLayout>
+</LinearLayout>

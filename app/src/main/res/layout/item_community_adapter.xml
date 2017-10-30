@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tab_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_talk_headpic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                fresco:placeholderImage="@drawable/icon_placeholder"
+                fresco:roundedCornerRadius="180dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户昵称"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_created_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="发布时间"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_community_comnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/tv_comnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/combined_shape" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_community_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tab_bg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="这里是聊聊的主标题"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_community_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tab_bg"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="这里是正文，最多显示两行"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_business_tag"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_business_created_at"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1" />-->
+    <!--</LinearLayout>-->
+
+    <!--<com.ms.square.android.expandabletextview.ExpandableTextView-->
+    <!--android:id="@+id/tv_business_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--expandableTextView:animDuration="200"-->
+    <!--expandableTextView:maxCollapsedLines="2">-->
+
+    <!--<TextView-->
+    <!--android:id="@id/expandable_text"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:textColor="#666666" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@id/expand_collapse"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right|bottom"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:padding="16dp" />-->
+    <!--</com.ms.square.android.expandabletextview.ExpandableTextView>-->
+
+    <LinearLayout
+        android:id="@+id/ll_iv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_mypublish_pic1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_mypublish_pic2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_mypublish_pic3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_iv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_mypublish_pic4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_mypublish_pic5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_mypublish_pic6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.BusinessProjectTitleBarView
+        android:id="@+id/title_business_hot_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.BusinessProjectTitleBarView>
+
+
+    <net.anchong.app.third.xlistview.XListView
+        android:id="@+id/xlv_activity_hot_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </net.anchong.app.third.xlistview.XListView>
+
+</LinearLayout>

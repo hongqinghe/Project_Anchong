@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 商品二级分类列表item布局 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_category_two_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="二级分类" />
+
+    <net.anchong.app.view.MyGridView
+        android:id="@+id/gv_category_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp">
+
+    </net.anchong.app.view.MyGridView>
+</LinearLayout>

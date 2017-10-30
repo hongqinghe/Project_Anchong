@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.anchong.app">
+
+
+    <!-- 阿里云所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+
+    <!-- 支付宝接入 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".ui.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.MemberCenterActivity" />
+        <activity android:name=".ui.BasicInfoActivity" />
+        <activity android:name=".ui.AddressActivity" />
+        <activity android:name=".ui.TheBankAccountActivity" />
+        <activity android:name=".ui.AttestationActivity" />
+        <activity android:name=".ui.EntityActivity" />
+        <activity android:name=".ui.ShopActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.CertificationActivity" />
+        <activity android:name=".ui.PublishActivity" />
+        <activity android:name=".ui.MyPublishActivity" />
+        <activity android:name=".ui.EditPublishActivity" />
+        <activity android:name=".ui.ForgetPassActivity" />
+        <activity android:name=".ui.ResetPasswordActivity" />
+        <activity android:name=".ui.BusinessInfoActivity" />
+        <activity
+            android:name=".ui.SearchPopupActivity"
+            android:theme="@style/MyDialogTopRight" />
+        <activity android:name=".ui.AddressManagerActivity" />
+        <activity android:name=".ui.EditAddressActivity" />
+        <activity android:name=".ui.ImagePagerActivity" />
+        <activity android:name=".ui.GoodsListActivity" />
+        <activity android:name=".ui.GoodsInformationActivity" />
+        <activity
+            android:name=".ui.GoodsSetParamActivity"
+            android:theme="@style/dialog" />
+        <activity android:name=".ui.ShopCarActivity" />
+        <activity android:name=".ui.CreateOrderActivity" />
+        <activity android:name=".ui.MoreGoodsInfoActivity" />
+        <activity android:name=".ui.GoodsListPagerActivity" />
+        <activity android:name=".ui.OrderInfoActivity" />
+        <activity android:name=".ui.OrderMoreInfoActivity" />
+        <activity android:name=".ui.RequestShopActivity" />
+        <activity android:name=".ui.MyShopActivity" />
+        <activity android:name=".ui.ShopGoodsManagerActivity" />
+        <activity android:name=".ui.ShopOrderInfoActivity" />
+        <activity android:name=".ui.ShopSendOutActivity" />
+        <activity android:name=".ui.ShopGoodsTypeActivity" />
+        <activity android:name=".ui.CommnuityActivity" />
+        <activity android:name=".ui.CommunityInfoActivity" />
+        <activity android:name=".ui.MyCommunityActivity" />
+        <activity android:name=".ui.MyCommunityInfoActivity" />
+        <activity android:name=".ui.CommunityMyCollecActivity" />
+        <activity android:name=".ui.BusinessHotProjectActivity" />
+        <activity android:name=".ui.BusinessDetaActivity" />
+        <activity android:name=".ui.BusinessHotSearchActivity" />
+        <activity android:name=".ui.ShopIndexActivity" />
+        <activity android:name=".ui.CropImageActivity" />
+        <activity android:name=".ui.NewsDetaActivity" />
+
+        <!-- 支付宝接入 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+    </application>
+
+</manifest>

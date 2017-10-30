@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.GeneralTitleBarView
+        android:id="@+id/gtbv_reset_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.GeneralTitleBarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_reset_captcha"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/login_edittext"
+            android:hint="@string/reset_captcha"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/dark_light"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_reset_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/login_edittext"
+            android:hint="@string/reset_password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/dark_light"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_reset_pass2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/login_edittext"
+            android:hint="@string/reset_password2"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/dark_light"
+            android:textSize="14sp" />
+
+        <com.cengalabs.flatui.views.FlatButton
+            android:id="@+id/btn_reset_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_reset_ok"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            flatui:fl_borderWidth="2dp"
+            flatui:fl_cornerRadius="5dp"
+            flatui:fl_fontExtension="ttf"
+            flatui:fl_fontFamily="roboto"
+            flatui:fl_fontWeight="light"
+            flatui:fl_size="20dp"
+            flatui:fl_theme="@array/blood" />
+    </LinearLayout>
+</LinearLayout>

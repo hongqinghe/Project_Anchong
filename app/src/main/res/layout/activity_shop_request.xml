@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.GeneralTitleBarView
+        android:id="@+id/gtvv_shop_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.GeneralTitleBarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/theme_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/tab_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BasicInfoFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="店铺头像" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_shop_request_headpic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/iv_userinfo"
+                    android:onClick="showMenu"
+                    fresco:placeholderImage="@drawable/icon_placeholder"
+                    fresco:roundedCornerRadius="180dp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/sdv_shop_request_headpic"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_toLeftOf="@+id/iv_userinfo"-->
+                <!--android:src="@drawable/icon_placeholder"-->
+                <!--android:onClick="showMenu" />-->
+
+                <ImageView
+                    android:id="@+id/iv_userinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/userinfo_arror" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_activity_shoprequest_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/tab_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BasicInfoFont"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="店铺名称" />
+
+                <TextView
+                    android:id="@+id/tv_shop_request_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="请输入店铺名称" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:src="@drawable/userinfo_arror" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_activity_shoprequest_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/tab_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BasicInfoFont"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="店铺介绍" />
+
+                <TextView
+                    android:id="@+id/tv_shop_request_introduction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="请输入店铺介绍" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:src="@drawable/userinfo_arror" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_activity_shoprequest_brandName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/tab_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BasicInfoFont"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="主营品牌" />
+
+                <TextView
+                    android:id="@+id/tv_shop_request_brandName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="请选择主营品牌" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:src="@drawable/userinfo_arror" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_activity_shoprequest_catName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/tab_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BasicInfoFont"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="主营类别" />
+
+                <TextView
+                    android:id="@+id/tv_shop_request_catName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="请选择主营类别" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:src="@drawable/userinfo_arror" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_activity_shoprequest_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/tab_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BasicInfoFont"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="经营地点" />
+
+                <TextView
+                    android:id="@+id/tv_shop_request_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="请选择经营地点" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:src="@drawable/userinfo_arror" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_info_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/tab_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BasicInfoFont"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:text="品牌授权书" />
+
+                <TextView
+                    android:id="@+id/tv_basic_info_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:src="@drawable/userinfo_arror" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gv_shop_request_brandUrl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3">
+
+            </GridView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

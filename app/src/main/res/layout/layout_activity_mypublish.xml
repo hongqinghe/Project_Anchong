@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.GeneralTitleBarView
+        android:id="@+id/gtvv_mypublish_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.GeneralTitleBarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:paddingRight="10dp"
+                    android:text="标题:" />
+
+                <com.cengalabs.flatui.views.FlatEditText
+                    android:id="@+id/et_mypublish_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    flatui:fl_borderWidth="1dp"
+                    flatui:fl_cornerRadius="5dp"
+                    flatui:fl_fieldStyle="fl_box"
+                    flatui:fl_size="20dp"
+                    flatui:fl_theme="@array/snow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="发布类别:" />
+
+                <com.cengalabs.flatui.views.FlatEditText
+                    android:id="@+id/et_mypublish_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    flatui:fl_borderWidth="1dp"
+                    flatui:fl_cornerRadius="5dp"
+                    flatui:fl_fieldStyle="fl_box"
+                    flatui:fl_fontExtension="ttf"
+                    flatui:fl_fontFamily="roboto"
+                    flatui:fl_fontWeight="light"
+                    flatui:fl_size="20dp"
+                    flatui:fl_textAppearance="fl_dark"
+                    flatui:fl_textColor="fl_main"
+                    flatui:fl_theme="@array/snow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="工程类型:" />
+
+                <com.cengalabs.flatui.views.FlatEditText
+                    android:id="@+id/et_mypublish_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:singleLine="true"
+                    flatui:fl_borderWidth="1dp"
+                    flatui:fl_cornerRadius="5dp"
+                    flatui:fl_fieldStyle="fl_box"
+                    flatui:fl_fontExtension="ttf"
+                    flatui:fl_fontFamily="roboto"
+                    flatui:fl_fontWeight="light"
+                    flatui:fl_size="20dp"
+                    flatui:fl_textAppearance="fl_dark"
+                    flatui:fl_textColor="fl_main"
+                    flatui:fl_theme="@array/snow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="区域:" />
+
+                <LinearLayout
+                    android:id="@+id/ll_mypublish_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/et_mypublish_tags1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:minWidth="50dp"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        flatui:fl_borderWidth="1dp"
+                        flatui:fl_cornerRadius="5dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_size="16dp"
+                        flatui:fl_textAppearance="fl_dark"
+                        flatui:fl_textColor="fl_main"
+                        flatui:fl_theme="@array/snow" />
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/et_mypublish_tags2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:minWidth="50dp"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:visibility="invisible"
+                        flatui:fl_borderWidth="1dp"
+                        flatui:fl_cornerRadius="5dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_size="16dp"
+                        flatui:fl_textAppearance="fl_dark"
+                        flatui:fl_textColor="fl_main"
+                        flatui:fl_theme="@array/snow" />
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/et_mypublish_tags3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:minWidth="50dp"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:visibility="invisible"
+                        flatui:fl_borderWidth="1dp"
+                        flatui:fl_cornerRadius="5dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_size="16dp"
+                        flatui:fl_textAppearance="fl_dark"
+                        flatui:fl_textColor="fl_main"
+                        flatui:fl_theme="@array/snow" />
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/et_mypublish_tags4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:minWidth="50dp"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:visibility="invisible"
+                        flatui:fl_borderWidth="1dp"
+                        flatui:fl_cornerRadius="5dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_size="16dp"
+                        flatui:fl_textAppearance="fl_dark"
+                        flatui:fl_textColor="fl_main"
+                        flatui:fl_theme="@array/snow" />
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/et_mypublish_tags5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:minWidth="50dp"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:visibility="invisible"
+                        flatui:fl_borderWidth="1dp"
+                        flatui:fl_cornerRadius="5dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_size="16dp"
+                        flatui:fl_textAppearance="fl_dark"
+                        flatui:fl_textColor="fl_main"
+                        flatui:fl_theme="@array/snow" />
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/et_mypublish_tags6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:minWidth="50dp"
+                        android:paddingLeft="2dp"
+                        android:singleLine="true"
+                        android:visibility="invisible"
+                        flatui:fl_borderWidth="1dp"
+                        flatui:fl_cornerRadius="5dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_size="16dp"
+                        flatui:fl_textAppearance="fl_dark"
+                        flatui:fl_textColor="fl_main"
+                        flatui:fl_theme="@array/snow" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="内容:" />
+
+                <com.cengalabs.flatui.views.FlatEditText
+                    android:id="@+id/et_mypublish_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    flatui:fl_borderWidth="1dp"
+                    flatui:fl_cornerRadius="5dp"
+                    flatui:fl_fieldStyle="fl_box"
+                    flatui:fl_fontExtension="ttf"
+                    flatui:fl_fontFamily="roboto"
+                    flatui:fl_fontWeight="light"
+                    flatui:fl_size="20dp"
+                    flatui:fl_textAppearance="fl_none"
+                    flatui:fl_textColor="fl_light"
+                    flatui:fl_theme="@array/snow" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="添加图片:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_mypublish_pic1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        fresco:failureImage="@drawable/icon_failure"
+                        fresco:placeholderImage="@drawable/icon_placeholder"
+                        fresco:placeholderImageScaleType="fitXY"
+                        fresco:progressBarAutoRotateInterval="5000"
+                        fresco:progressBarImage="@drawable/icon_progress_bar"
+                        fresco:progressBarImageScaleType="fitCenter"
+                        fresco:viewAspectRatio="1" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_mypublish_pic2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        fresco:placeholderImage="@drawable/icon_placeholder"
+                        fresco:placeholderImageScaleType="fitXY"
+                        fresco:progressBarAutoRotateInterval="5000"
+                        fresco:progressBarImage="@drawable/icon_progress_bar"
+                        fresco:progressBarImageScaleType="fitCenter"
+                        fresco:viewAspectRatio="1" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_mypublish_pic3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        fresco:placeholderImage="@drawable/icon_placeholder"
+                        fresco:placeholderImageScaleType="fitXY"
+                        fresco:progressBarAutoRotateInterval="5000"
+                        fresco:progressBarImage="@drawable/icon_progress_bar"
+                        fresco:progressBarImageScaleType="fitCenter"
+                        fresco:viewAspectRatio="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_mypublish_pic4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        fresco:placeholderImage="@drawable/icon_placeholder"
+                        fresco:placeholderImageScaleType="fitXY"
+                        fresco:progressBarAutoRotateInterval="5000"
+                        fresco:progressBarImage="@drawable/icon_progress_bar"
+                        fresco:progressBarImageScaleType="fitCenter"
+                        fresco:viewAspectRatio="1" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_mypublish_pic5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        fresco:placeholderImage="@drawable/icon_placeholder"
+                        fresco:placeholderImageScaleType="fitXY"
+                        fresco:progressBarAutoRotateInterval="5000"
+                        fresco:progressBarImage="@drawable/icon_progress_bar"
+                        fresco:progressBarImageScaleType="fitCenter"
+                        fresco:viewAspectRatio="1" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_mypublish_pic6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        fresco:placeholderImage="@drawable/icon_placeholder"
+                        fresco:placeholderImageScaleType="fitXY"
+                        fresco:progressBarAutoRotateInterval="5000"
+                        fresco:progressBarImage="@drawable/icon_progress_bar"
+                        fresco:progressBarImageScaleType="fitCenter"
+                        fresco:viewAspectRatio="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 封面图片 -->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_mall_head_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        fresco:actualImageScaleType="fitXY"
+        fresco:failureImage="@drawable/icon_placeholder"
+        fresco:failureImageScaleType="fitXY"
+        fresco:placeholderImage="@drawable/icon_placeholder"
+        fresco:placeholderImageScaleType="fitXY"
+        fresco:progressBarImageScaleType="centerCrop"
+        fresco:viewAspectRatio="0.94" />
+    <!-- 封面图片 -->
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 商品三级分类 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_gridview_three"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        fresco:placeholderImage="@drawable/icon_placeholder"
+        fresco:roundingBorderColor="@color/white"
+        fresco:roundingBorderWidth="2dp" />
+
+    <TextView
+        android:id="@+id/tv_gridview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品分类"
+        android:textSize="12sp" />
+</LinearLayout>

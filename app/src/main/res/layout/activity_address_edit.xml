@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.GeneralTitleBarView
+        android:id="@+id/gtvv_basicinfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.GeneralTitleBarView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_add_address_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Add_Address_Lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="收货人：" />
+
+        <EditText
+            android:id="@+id/et_editaddress_name"
+            style="@style/Add_Address_Input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/add_address_edittext" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_address_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Add_Address_Lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="联系电话：" />
+
+        <EditText
+            android:id="@+id/et_editaddress_phone"
+            style="@style/Add_Address_Input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/add_address_edittext"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit_address_area"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Add_Address_Lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingLeft="10dp"
+            android:text="所在地区：" />
+
+        <TextView
+            android:id="@+id/et_editaddress_area"
+            style="@style/Add_Address_Input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit_address_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Add_Address_Lable"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="详细地址：" />
+
+        <EditText
+            android:id="@+id/et_edit_address"
+            style="@style/Add_Address_Input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/add_address_edittext" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.cengalabs.flatui.views.FlatButton
+        android:id="@+id/btn_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        flatui:fl_borderWidth="2dp"
+        flatui:fl_cornerRadius="5dp"
+        flatui:fl_fontExtension="ttf"
+        flatui:fl_fontFamily="roboto"
+        flatui:fl_fontWeight="light"
+        flatui:fl_size="20dp"
+        flatui:fl_theme="@array/blood" />
+
+</LinearLayout>

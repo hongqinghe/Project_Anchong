@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.BusinessProjectTitleBarView
+        android:id="@+id/title_business_deta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.BusinessProjectTitleBarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_business_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="标题"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_business_created_at"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2016-10-1 14：52：33"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类别："
+                    android:textColor="#BB000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_business_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="探测监控"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="区域："
+                    android:textColor="#BB000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_business_tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="北京"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话："
+                    android:textColor="#BB000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_business_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="探测监控"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_business_deta_pic1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    fresco:failureImage="@drawable/icon_failure"
+                    fresco:placeholderImage="@drawable/icon_placeholder"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarAutoRotateInterval="5000"
+                    fresco:progressBarImage="@drawable/icon_progress_bar"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:viewAspectRatio="1" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_business_deta_pic2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    fresco:failureImage="@drawable/icon_failure"
+                    fresco:placeholderImage="@drawable/icon_placeholder"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarAutoRotateInterval="5000"
+                    fresco:progressBarImage="@drawable/icon_progress_bar"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:viewAspectRatio="1" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_business_deta_pic3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    fresco:failureImage="@drawable/icon_failure"
+                    fresco:placeholderImage="@drawable/icon_placeholder"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarAutoRotateInterval="5000"
+                    fresco:progressBarImage="@drawable/icon_progress_bar"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:viewAspectRatio="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_business_deta_pic4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    fresco:failureImage="@drawable/icon_failure"
+                    fresco:placeholderImage="@drawable/icon_placeholder"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarAutoRotateInterval="5000"
+                    fresco:progressBarImage="@drawable/icon_progress_bar"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:viewAspectRatio="1" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_business_deta_pic5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    fresco:failureImage="@drawable/icon_failure"
+                    fresco:placeholderImage="@drawable/icon_placeholder"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarAutoRotateInterval="5000"
+                    fresco:progressBarImage="@drawable/icon_progress_bar"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:viewAspectRatio="1" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_business_deta_pic6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    fresco:failureImage="@drawable/icon_failure"
+                    fresco:placeholderImage="@drawable/icon_placeholder"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarAutoRotateInterval="5000"
+                    fresco:progressBarImage="@drawable/icon_progress_bar"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:viewAspectRatio="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_business_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.anchong.app.view.WhiteGeneralTitleBarView
+        android:id="@+id/wgtvv_commnuity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </net.anchong.app.view.WhiteGeneralTitleBarView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_add_address_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Add_Address_Lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="标  题：" />
+
+        <EditText
+            android:id="@+id/et_community_release_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_edittext"
+            android:hint="请输入标题"
+            android:paddingLeft="3dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_address_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Add_Address_Lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="标  签：" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_select_release_xianliao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_white_gb_red_font"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="闲聊" />
+
+            <TextView
+                android:id="@+id/tv_select_release_wenwen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/text_rount_default"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="问问" />
+
+            <TextView
+                android:id="@+id/tv_select_release_huodong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/text_rount_default"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="活动" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.cengalabs.flatui.views.FlatEditText
+        android:id="@+id/et_community_release_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:gravity="top"
+        android:hint="请输入正文："
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:minLines="4"
+        android:paddingLeft="10dp"
+        flatui:fl_borderWidth="1dp"
+        flatui:fl_cornerRadius="1dp"
+        flatui:fl_fieldStyle="fl_box"
+        flatui:fl_fontExtension="ttf"
+        flatui:fl_fontFamily="roboto"
+        flatui:fl_fontWeight="light"
+        flatui:fl_size="15sp"
+        flatui:fl_theme="@array/custom_theme" />
+
+    <LinearLayout
+        android:id="@+id/ll_iv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_community_release_pic1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_community_release_pic2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_community_release_pic3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_iv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_community_release_pic4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_community_release_pic5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_community_release_pic6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            fresco:failureImage="@drawable/icon_failure"
+            fresco:placeholderImage="@drawable/icon_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@drawable/icon_progress_bar"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:viewAspectRatio="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_community_add_pic"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/community_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="添加照片"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.cengalabs.flatui.views.FlatButton
+        android:id="@+id/btn_community_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        flatui:fl_borderWidth="2dp"
+        flatui:fl_cornerRadius="5dp"
+        flatui:fl_fontExtension="ttf"
+        flatui:fl_fontFamily="roboto"
+        flatui:fl_fontWeight="light"
+        flatui:fl_size="20dp"
+        flatui:fl_theme="@array/blood" />
+
+</LinearLayout>
